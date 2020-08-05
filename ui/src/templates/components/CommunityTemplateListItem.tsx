@@ -42,7 +42,7 @@ const CommunityTemplateListItem: FC<Props> = ({
   )
 
   return (
-    <Panel className="community-templates--item">
+    <Panel className="community-templates--item" >
       <Panel.Body
         size={ComponentSize.ExtraSmall}
         alignItems={AlignItems.Center}
@@ -58,6 +58,7 @@ const CommunityTemplateListItem: FC<Props> = ({
           icon={IconFont.Checkmark}
           color={ComponentColor.Success}
           disabled={shouldDisableToggle}
+          testID={`templates-toggle--${title}`}
         />
         <FlexBox
           alignItems={AlignItems.FlexStart}
